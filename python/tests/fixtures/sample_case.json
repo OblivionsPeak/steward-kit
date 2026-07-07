@@ -1,0 +1,1025 @@
+{
+  "format": "steward-kit/case@1",
+  "fetched_at": "2026-01-01T00:00:00+00:00",
+  "session": {
+    "subsession_id": 99999999,
+    "session_name": "OpMo Enduro Test at Watkins Glen",
+    "league_name": "Operation Motorsport eMotorsport League",
+    "track": "Watkins Glen International",
+    "config": "Boot",
+    "start_time": "2026-01-01T19:00:00Z",
+    "simulated_start": "2026-01-01T14:00:00",
+    "session_types": [
+      "PRACTICE",
+      "QUALIFY",
+      "RACE"
+    ]
+  },
+  "drivers": [
+    {
+      "car_idx": 0,
+      "cust_id": 1001,
+      "name": "Alex Vance",
+      "car": "Ferrari 296 GT3",
+      "car_number": "11",
+      "car_class": "GT3",
+      "finish_pos": 0,
+      "laps_complete": 20,
+      "incidents": 4,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 0.0
+        },
+        {
+          "lap": 2,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 92.0
+        },
+        {
+          "lap": 3,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 184.0
+        },
+        {
+          "lap": 4,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 276.0
+        },
+        {
+          "lap": 5,
+          "time_s": 92.0,
+          "flags": [
+            "car_contact"
+          ],
+          "position": 1,
+          "session_time_s": 368.0
+        },
+        {
+          "lap": 6,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 460.0
+        },
+        {
+          "lap": 7,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 552.0
+        },
+        {
+          "lap": 8,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 644.0
+        },
+        {
+          "lap": 9,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 736.0
+        },
+        {
+          "lap": 10,
+          "time_s": 92.0,
+          "flags": [
+            "some new thing"
+          ],
+          "position": 1,
+          "session_time_s": 828.0
+        },
+        {
+          "lap": 11,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 920.0
+        },
+        {
+          "lap": 12,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1012.0
+        },
+        {
+          "lap": 13,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1104.0
+        },
+        {
+          "lap": 14,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1196.0
+        },
+        {
+          "lap": 15,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1288.0
+        },
+        {
+          "lap": 16,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1380.0
+        },
+        {
+          "lap": 17,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1472.0
+        },
+        {
+          "lap": 18,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1564.0
+        },
+        {
+          "lap": 19,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1656.0
+        },
+        {
+          "lap": 20,
+          "time_s": 92.0,
+          "flags": [],
+          "position": 1,
+          "session_time_s": 1748.0
+        }
+      ]
+    },
+    {
+      "car_idx": 1,
+      "cust_id": 1002,
+      "name": "Riley Chen",
+      "car": "BMW M4 GT3",
+      "car_number": "22",
+      "car_class": "GT3",
+      "finish_pos": 1,
+      "laps_complete": 20,
+      "incidents": 4,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 0.0
+        },
+        {
+          "lap": 2,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 92.4
+        },
+        {
+          "lap": 3,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 184.8
+        },
+        {
+          "lap": 4,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 277.2
+        },
+        {
+          "lap": 5,
+          "time_s": 92.4,
+          "flags": [
+            "car_contact"
+          ],
+          "position": 2,
+          "session_time_s": 369.6
+        },
+        {
+          "lap": 6,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 462.0
+        },
+        {
+          "lap": 7,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 554.4
+        },
+        {
+          "lap": 8,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 646.8
+        },
+        {
+          "lap": 9,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 739.2
+        },
+        {
+          "lap": 10,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 831.6
+        },
+        {
+          "lap": 11,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 924.0
+        },
+        {
+          "lap": 12,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1016.4
+        },
+        {
+          "lap": 13,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1108.8
+        },
+        {
+          "lap": 14,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1201.2
+        },
+        {
+          "lap": 15,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1293.6
+        },
+        {
+          "lap": 16,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1386.0
+        },
+        {
+          "lap": 17,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1478.4
+        },
+        {
+          "lap": 18,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1570.8
+        },
+        {
+          "lap": 19,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1663.2
+        },
+        {
+          "lap": 20,
+          "time_s": 92.4,
+          "flags": [],
+          "position": 2,
+          "session_time_s": 1755.6
+        }
+      ]
+    },
+    {
+      "car_idx": 2,
+      "cust_id": 1003,
+      "name": "Sam Ortiz",
+      "car": "Porsche 992 GT3 R",
+      "car_number": "44",
+      "car_class": "GT3",
+      "finish_pos": 2,
+      "laps_complete": 20,
+      "incidents": 1,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 0.0
+        },
+        {
+          "lap": 2,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 93.0
+        },
+        {
+          "lap": 3,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 186.0
+        },
+        {
+          "lap": 4,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 279.0
+        },
+        {
+          "lap": 5,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 372.0
+        },
+        {
+          "lap": 6,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 465.0
+        },
+        {
+          "lap": 7,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 558.0
+        },
+        {
+          "lap": 8,
+          "time_s": 94.0,
+          "flags": [
+            "off_track",
+            "tow",
+            "discontinuity"
+          ],
+          "position": 3,
+          "session_time_s": 651.0
+        },
+        {
+          "lap": 9,
+          "time_s": 95.0,
+          "flags": [
+            "tow",
+            "discontinuity"
+          ],
+          "position": 3,
+          "session_time_s": 745.0
+        },
+        {
+          "lap": 10,
+          "time_s": 96.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 840.0
+        },
+        {
+          "lap": 11,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 936.0
+        },
+        {
+          "lap": 12,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1029.0
+        },
+        {
+          "lap": 13,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1122.0
+        },
+        {
+          "lap": 14,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1215.0
+        },
+        {
+          "lap": 15,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1308.0
+        },
+        {
+          "lap": 16,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1401.0
+        },
+        {
+          "lap": 17,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1494.0
+        },
+        {
+          "lap": 18,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1587.0
+        },
+        {
+          "lap": 19,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1680.0
+        },
+        {
+          "lap": 20,
+          "time_s": 93.0,
+          "flags": [],
+          "position": 3,
+          "session_time_s": 1773.0
+        }
+      ]
+    },
+    {
+      "car_idx": 3,
+      "cust_id": 2001,
+      "name": "Jordan Blake",
+      "car": "Aston Martin GT4",
+      "car_number": "71",
+      "car_class": "GT4",
+      "finish_pos": 3,
+      "laps_complete": 20,
+      "incidents": 4,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 0.0
+        },
+        {
+          "lap": 2,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 101.0
+        },
+        {
+          "lap": 3,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 202.0
+        },
+        {
+          "lap": 4,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 303.0
+        },
+        {
+          "lap": 5,
+          "time_s": 101.0,
+          "flags": [
+            "car_contact"
+          ],
+          "position": 4,
+          "session_time_s": 404.0
+        },
+        {
+          "lap": 6,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 505.0
+        },
+        {
+          "lap": 7,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 606.0
+        },
+        {
+          "lap": 8,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 707.0
+        },
+        {
+          "lap": 9,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 808.0
+        },
+        {
+          "lap": 10,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 909.0
+        },
+        {
+          "lap": 11,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1010.0
+        },
+        {
+          "lap": 12,
+          "time_s": 101.0,
+          "flags": [
+            "lost_control"
+          ],
+          "position": 4,
+          "session_time_s": 1111.0
+        },
+        {
+          "lap": 13,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1212.0
+        },
+        {
+          "lap": 14,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1313.0
+        },
+        {
+          "lap": 15,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1414.0
+        },
+        {
+          "lap": 16,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1515.0
+        },
+        {
+          "lap": 17,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1616.0
+        },
+        {
+          "lap": 18,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1717.0
+        },
+        {
+          "lap": 19,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1818.0
+        },
+        {
+          "lap": 20,
+          "time_s": 101.0,
+          "flags": [],
+          "position": 4,
+          "session_time_s": 1919.0
+        }
+      ]
+    },
+    {
+      "car_idx": 4,
+      "cust_id": 2002,
+      "name": "Casey Munn",
+      "car": "McLaren 570S GT4",
+      "car_number": "72",
+      "car_class": "GT4",
+      "finish_pos": 4,
+      "laps_complete": 20,
+      "incidents": 4,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 0.0
+        },
+        {
+          "lap": 2,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 101.5
+        },
+        {
+          "lap": 3,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 203.0
+        },
+        {
+          "lap": 4,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 304.5
+        },
+        {
+          "lap": 5,
+          "time_s": 101.5,
+          "flags": [
+            "car_contact"
+          ],
+          "position": 5,
+          "session_time_s": 406.0
+        },
+        {
+          "lap": 6,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 507.5
+        },
+        {
+          "lap": 7,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 609.0
+        },
+        {
+          "lap": 8,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 710.5
+        },
+        {
+          "lap": 9,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 812.0
+        },
+        {
+          "lap": 10,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 913.5
+        },
+        {
+          "lap": 11,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1015.0
+        },
+        {
+          "lap": 12,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1116.5
+        },
+        {
+          "lap": 13,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1218.0
+        },
+        {
+          "lap": 14,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1319.5
+        },
+        {
+          "lap": 15,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1421.0
+        },
+        {
+          "lap": 16,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1522.5
+        },
+        {
+          "lap": 17,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1624.0
+        },
+        {
+          "lap": 18,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1725.5
+        },
+        {
+          "lap": 19,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1827.0
+        },
+        {
+          "lap": 20,
+          "time_s": 101.5,
+          "flags": [],
+          "position": 5,
+          "session_time_s": 1928.5
+        }
+      ]
+    },
+    {
+      "car_idx": 5,
+      "cust_id": 2003,
+      "name": "Devon Reyes",
+      "car": "Porsche 718 GT4",
+      "car_number": "88",
+      "car_class": "GT4",
+      "finish_pos": 5,
+      "laps_complete": 20,
+      "incidents": 1,
+      "laps": [
+        {
+          "lap": 1,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 0.0
+        },
+        {
+          "lap": 2,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 102.0
+        },
+        {
+          "lap": 3,
+          "time_s": 102.0,
+          "flags": [
+            "pitted"
+          ],
+          "position": 6,
+          "session_time_s": 204.0
+        },
+        {
+          "lap": 4,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 306.0
+        },
+        {
+          "lap": 5,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 408.0
+        },
+        {
+          "lap": 6,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 510.0
+        },
+        {
+          "lap": 7,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 612.0
+        },
+        {
+          "lap": 8,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 714.0
+        },
+        {
+          "lap": 9,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 816.0
+        },
+        {
+          "lap": 10,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 918.0
+        },
+        {
+          "lap": 11,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1020.0
+        },
+        {
+          "lap": 12,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1122.0
+        },
+        {
+          "lap": 13,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1224.0
+        },
+        {
+          "lap": 14,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1326.0
+        },
+        {
+          "lap": 15,
+          "time_s": 102.0,
+          "flags": [
+            "black_flag"
+          ],
+          "position": 6,
+          "session_time_s": 1428.0
+        },
+        {
+          "lap": 16,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1530.0
+        },
+        {
+          "lap": 17,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1632.0
+        },
+        {
+          "lap": 18,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1734.0
+        },
+        {
+          "lap": 19,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1836.0
+        },
+        {
+          "lap": 20,
+          "time_s": 102.0,
+          "flags": [],
+          "position": 6,
+          "session_time_s": 1938.0
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "car_contact",
+      "session_time_s": 368.0,
+      "lap": 5,
+      "car_idx": [
+        0,
+        1
+      ],
+      "description": "Car contact (lap 5): #11 Alex Vance, #22 Riley Chen",
+      "source": "derived"
+    },
+    {
+      "type": "event_log_4",
+      "session_time_s": 368.0,
+      "lap": 5,
+      "car_idx": [
+        0
+      ],
+      "description": "Alex Vance and Riley Chen made contact",
+      "source": "api"
+    },
+    {
+      "type": "car_contact",
+      "session_time_s": 404.0,
+      "lap": 5,
+      "car_idx": [
+        3,
+        4
+      ],
+      "description": "Car contact (lap 5): #71 Jordan Blake, #72 Casey Munn",
+      "source": "derived"
+    },
+    {
+      "type": "off_track",
+      "session_time_s": 651.0,
+      "lap": 8,
+      "car_idx": [
+        2
+      ],
+      "description": "Off track: #44 Sam Ortiz (lap 8)",
+      "source": "derived"
+    },
+    {
+      "type": "lost_control",
+      "session_time_s": 1111.0,
+      "lap": 12,
+      "car_idx": [
+        3
+      ],
+      "description": "Lost control: #71 Jordan Blake (lap 12)",
+      "source": "derived"
+    },
+    {
+      "type": "black_flag",
+      "session_time_s": 1428.0,
+      "lap": 15,
+      "car_idx": [
+        5
+      ],
+      "description": "Black flag: #88 Devon Reyes (lap 15)",
+      "source": "derived"
+    }
+  ]
+}
