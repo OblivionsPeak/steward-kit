@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steward Kit — iRacing league incident review</title>
+<meta name="description" content="Drop a stewardcase.json exported by the Steward Kit fetcher and work the incident queue: estimated replay timestamps, penalty rubric, Discord-ready ruling posts. Fully client-side — league data never leaves your browser.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0b0d'/%3E%3Cpath d='M2 2h5v5H2zM9 9h5v5H9z' fill='%23ffb84d'/%3E%3Cpath d='M9 2h5v5H9zM2 9h5v5H2z' fill='%23fff' fill-opacity='.85'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <h1>STEWARD<span class="accent">·</span>KIT</h1>
+    <span class="tag">iRacing league incident review — replay timestamps, penalty rubric, ruling posts</span>
+  </div>
+  <div class="stripe"></div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button id="tab-review" class="active" data-tab="review">Review</button>
+  <button id="tab-rubric" data-tab="rubric">Rubric</button>
+  <button id="tab-report" data-tab="report">Report</button>
+</nav>
+
+<!-- ======================= REVIEW ======================= -->
+<section id="panel-review" class="tab-panel active">
+
+  <div class="panel">
+    <h2>Case file</h2>
+    <div id="dropzone" class="dropzone">
+      <div><strong>Drop stewardcase.json here</strong> — or click to browse</div>
+      <div class="sub">Exported by the Steward Kit Python fetcher. Everything stays in this browser
+        (localStorage) — league results, driver names and your decisions never upload anywhere.</div>
+    </div>
+    <input id="file-input" type="file" accept=".json,application/json" hidden>
+    <div id="file-status"></div>
+    <div class="row" style="margin-top:12px">
+      <button id="btn-demo" class="btn small">Load demo case</button>
+      <button id="btn-clear" class="btn small">Clear case</button>
+      <span id="restore-note" class="faint-note"></span>
+    </div>
+  </div>
+
+  <div class="panel" id="session-panel" hidden>
+    <h2>Session</h2>
+    <div class="stat-grid" id="session-grid"></div>
+  </div>
+
+  <div class="review-grid" id="review-grid" hidden>
+    <div class="panel queue-panel">
+      <h2>Incident queue <span id="progress" class="progress"></span></h2>
+      <p class="hint">Sorted by estimated replay time. Jump the replay to the timestamp, review, decide.</p>
+      <div id="queue"></div>
+    </div>
+    <div class="panel detail-panel" id="detail-panel">
+      <h2>Incident detail</h2>
+      <div id="detail-empty" class="detail-empty">Select an incident from the queue.</div>
+      <div id="detail" hidden>
+        <div id="detail-head"></div>
+
+        <h3>Position trace — involved cars</h3>
+        <canvas id="pos-chart" height="150"></canvas>
+        <div class="legend" id="pos-legend"></div>
+
+        <h3>Laps around the incident</h3>
+        <div id="detail-laps"></div>
+
+        <h3>Decision</h3>
+        <div class="decision-form">
+          <label>Steward finding
+            <textarea id="dec-finding" rows="3" placeholder="What the stewards saw and why it matters…"></textarea>
+          </label>
+          <div class="form-row">
+            <label>Rubric code
+              <select id="dec-code"></select>
+            </label>
+            <label>Protest reference <span class="opt">optional</span>
+              <input id="dec-protest" type="text" placeholder="e.g. Protest P-04 (Team Vance)">
+            </label>
+          </div>
+          <label>Cars involved</label>
+          <div id="dec-cars" class="car-picks"></div>
+          <div class="row" style="margin-top:10px">
+            <button id="btn-decide" class="btn primary">Save decision</button>
+            <button id="btn-dismiss" class="btn">Dismiss — no action</button>
+            <button id="btn-reopen" class="btn small" hidden>Reopen</button>
+          </div>
+        </div>
+
+        <div id="post-preview-box" hidden>
+          <h3>Ruling post <button id="btn-copy-post" class="btn small">Copy</button></h3>
+          <pre id="post-preview" class="post"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ======================= RUBRIC ======================= -->
+<section id="panel-rubric" class="tab-panel">
+  <div class="panel">
+    <h2>Penalty rubric</h2>
+    <p class="hint">Ships with endurance-league defaults — edit anything. Stored in this browser
+      (localStorage); export JSON to share the league standard with your co-stewards.</p>
+    <div class="row" style="margin-bottom:14px">
+      <label class="inline-label">League
+        <input id="rubric-league" type="text">
+      </label>
+    </div>
+    <div class="table-scroll">
+      <table class="rubric" id="rubric-table">
+        <thead><tr><th>Code</th><th>Infraction</th><th>Action</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <button id="btn-rubric-add" class="btn">Add penalty</button>
+      <button id="btn-rubric-export" class="btn">Export rubric JSON</button>
+      <button id="btn-rubric-import" class="btn">Import rubric JSON</button>
+      <button id="btn-rubric-reset" class="btn small">Reset to defaults</button>
+      <input id="rubric-file" type="file" accept=".json,application/json" hidden>
+      <span id="rubric-status" class="faint-note"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= REPORT ======================= -->
+<section id="panel-report" class="tab-panel">
+  <div class="panel">
+    <h2>Stewards report <span id="report-progress" class="progress"></span></h2>
+    <p class="hint">Full-session digest of every decision — one Discord post. Individual rulings below.</p>
+    <div class="row" style="margin-bottom:10px">
+      <button id="btn-copy-report" class="btn primary">Copy report</button>
+      <button id="btn-export-decisions" class="btn">Export decisions JSON</button>
+      <button id="btn-import-decisions" class="btn">Import decisions JSON</button>
+      <input id="decisions-file" type="file" accept=".json,application/json" hidden>
+      <span id="report-status" class="faint-note"></span>
+    </div>
+    <pre id="report-text" class="post"></pre>
+  </div>
+  <div id="report-posts"></div>
+</section>
+
+<footer>
+  Steward Kit · client-side only — case files and decisions never leave your browser ·
+  <a href="https://github.com/OblivionsPeak/steward-kit">source on GitHub</a>
+</footer>
+
+</div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
